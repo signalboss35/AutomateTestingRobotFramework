@@ -108,3 +108,20 @@ Test Specified All Data
   Page Should Contain Text  บันทึกข้อมูลสำเร็จ
   Page Should Contain Text  OK
   Click Element  xpath=//android.widget.Button[@text='OK']
+Test Open Profile Screen Not Profile Should Be Show Text 'Not Profile'
+  Click Element  xpath=//android.widget.TextView[@text='PROFILE']
+  Wait Until Page Contains Element    xpath=//android.widget.TextView[@text='Not Profile']
+  Page Should Contain Text  Not Profile
+Test Open Profile Screen have Profile Should Be Detail
+  Click Element  xpath=//android.widget.TextView[@text='PROFILE']
+  Wait Until Page Contains Element    xpath=//android.widget.TextView[@text='Member']
+  Page Should Contain Text  Auttachai Kanthanras
+  Page Should Contain Text  auttachai@hii.or.th
+  Page Should Contain Text  0931369196
+  Page Should Contain Text  Hydro - Informatics Institute
+  Page Should Contain Text  Programmer
+Test Delete Profile From Storage
+  Wait Until Page Contains Element    xpath=//android.widget.TextView[@text='DELECT PROFILE']
+  Click Element  xpath=//android.widget.TextView[@text='DELECT PROFILE']
+  Wait Until Page Contains Element    xpath=//android.widget.TextView[@text='Not Profile']
+  Page Should Contain Text  Not Profile

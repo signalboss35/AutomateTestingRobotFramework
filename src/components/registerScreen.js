@@ -1,5 +1,17 @@
 import React from 'react';
-import {View, Text, StyleSheet, TextInput, Button, Alert} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TextInput,
+  Button,
+  Alert,
+  AsyncStorage,
+  YellowBox,
+} from 'react-native';
+YellowBox.ignoreWarnings(['Warning: ReactNative.createElement']);
+console.ignoredYellowBox = ['Warning: ReactNative.createElement'];
+console.disableYellowBox = true;
 const initialState = {
   fullName: '',
   email: '',
@@ -44,8 +56,31 @@ export default class RegisterScreen extends React.Component {
     } else {
       Alert.alert('Successful', 'บันทึกข้อมูลสำเร็จ');
       this.setState(initialState);
+      this._storeData();
     }
   }
+
+  _storeData = async () => {
+    const {
+      fullName,
+      email,
+      phoneNumber,
+      companyName,
+      jobPositionName,
+    } = this.state;
+    let profileData = {
+      fullname: fullName,
+      email: email,
+      phone: phoneNumber,
+      company: companyName,
+      position: jobPositionName,
+    };
+    try {
+      await AsyncStorage.setItem('profile', JSON.stringify(profileData));
+    } catch (error) {
+      // Error saving data
+    }
+  };
 
   render() {
     return (

@@ -24,7 +24,9 @@ export default class HomeScreen extends React.Component {
           style={styles.backgroundImage}
         />
         <View style={styles.mainComponents}>
-          <Text style={styles.titleStyle}>Automated Testing Robot Framework</Text>
+          <Text style={styles.titleStyle}>
+            Automated Testing Robot Framework
+          </Text>
           <Text style={styles.titleStyle}>DEV-HII</Text>
         </View>
       </View>

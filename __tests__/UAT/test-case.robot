@@ -14,6 +14,8 @@ Open Application
 	Open App
 Home Screen
     Test Page Home should Contain text
+Open Profile Screen
+    Test Open Profile Screen Not Profile Should Be Show Text 'Not Profile'    
 Register Screen
     Test Page Register should Contain text
 Not Specified Fullname
@@ -28,3 +30,7 @@ Not Specified Job Position Name
     Test JobPositionName Invalid
 Specified All data should be success alert
     Test Specified All Data
+Click Tab Profile should be show detail member
+    Test Open Profile Screen have Profile Should Be Detail
+Click Delete Profile From Storage Should Be Shoew Text Not Profile
+    Test Delete Profile From Storage
