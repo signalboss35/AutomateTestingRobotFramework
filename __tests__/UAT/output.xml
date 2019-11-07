@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20191107 12:01:41.995" rpa="false">
+<suite id="s1" name="Test-Case" source="D:\example_project\automate_test\__tests__\UAT\test-case.robot">
+<test id="s1-t1" name="Open Application">
+<kw name="Open App" library="keyword">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>platformName=${platformName}</arg>
+<arg>appPackage=${appPackage}</arg>
+<arg>appActivity=${appActivity}</arg>
+<arg>autoAcceptAlerts=True automationName=UiAutomator2 autoGrantPermissions=True autoDismissAlerts=True noReset=${noReset}</arg>
+</arguments>
+<status status="PASS" starttime="20191107 12:01:42.157" endtime="20191107 12:01:52.446"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:01:42.157" endtime="20191107 12:01:52.446"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:01:42.157" endtime="20191107 12:01:52.446" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Home Screen">
+<kw name="Test Page Home should Contain text" library="keyword">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='HOME']</arg>
+</arguments>
+<status status="PASS" starttime="20191107 12:01:52.446" endtime="20191107 12:01:54.394"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>HOME</arg>
+</arguments>
+<msg timestamp="20191107 12:01:54.696" level="INFO">Current page contains text 'HOME'.</msg>
+<status status="PASS" starttime="20191107 12:01:54.394" endtime="20191107 12:01:54.696"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>REGISTER</arg>
+</arguments>
+<msg timestamp="20191107 12:01:54.879" level="INFO">Current page contains text 'REGISTER'.</msg>
+<status status="PASS" starttime="20191107 12:01:54.696" endtime="20191107 12:01:54.879"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>PROFILE</arg>
+</arguments>
+<msg timestamp="20191107 12:01:55.011" level="INFO">Current page contains text 'PROFILE'.</msg>
+<status status="PASS" starttime="20191107 12:01:54.879" endtime="20191107 12:01:55.011"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Automated Testing Robot Framework</arg>
+</arguments>
+<msg timestamp="20191107 12:01:55.144" level="INFO">Current page contains text 'Automated Testing Robot Framework'.</msg>
+<status status="PASS" starttime="20191107 12:01:55.011" endtime="20191107 12:01:55.144"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>DEV-HII</arg>
+</arguments>
+<msg timestamp="20191107 12:01:55.265" level="INFO">Current page contains text 'DEV-HII'.</msg>
+<status status="PASS" starttime="20191107 12:01:55.144" endtime="20191107 12:01:55.265"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:01:52.446" endtime="20191107 12:01:55.265"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:01:52.446" endtime="20191107 12:01:55.265" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Register Screen">
+<kw name="Test Page Register should Contain text" library="keyword">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='REGISTER']</arg>
+</arguments>
+<msg timestamp="20191107 12:01:55.265" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='REGISTER']'.</msg>
+<status status="PASS" starttime="20191107 12:01:55.265" endtime="20191107 12:01:55.608"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='New Member Registration']</arg>
+</arguments>
+<status status="PASS" starttime="20191107 12:01:55.608" endtime="20191107 12:01:56.831"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>New Member Registration</arg>
+</arguments>
+<msg timestamp="20191107 12:01:57.087" level="INFO">Current page contains text 'New Member Registration'.</msg>
+<status status="PASS" starttime="20191107 12:01:56.831" endtime="20191107 12:01:57.087"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:01:55.265" endtime="20191107 12:01:57.087"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:01:55.265" endtime="20191107 12:01:57.087" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Not Specified Fullname">
+<kw name="Test Full Name Invalid" library="keyword">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='New Member Registration']</arg>
+</arguments>
+<status status="PASS" starttime="20191107 12:01:57.087" endtime="20191107 12:01:57.412"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='5']</arg>
+<arg>${EmailAddress}</arg>
+</arguments>
+<msg timestamp="20191107 12:01:57.412" level="INFO">Typing text 'auttachai@hii.or.th' into text field 'xpath=//*[@class='android.widget.EditText' and @index='5']'</msg>
+<status status="PASS" starttime="20191107 12:01:57.412" endtime="20191107 12:01:58.325"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='7']</arg>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<msg timestamp="20191107 12:01:58.326" level="INFO">Typing text '0931369196' into text field 'xpath=//*[@class='android.widget.EditText' and @index='7']'</msg>
+<status status="PASS" starttime="20191107 12:01:58.325" endtime="20191107 12:01:59.735"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='9']</arg>
+<arg>${CompanyName}</arg>
+</arguments>
+<msg timestamp="20191107 12:01:59.735" level="INFO">Typing text 'Hydro - Informatics Institute' into text field 'xpath=//*[@class='android.widget.EditText' and @index='9']'</msg>
+<status status="PASS" starttime="20191107 12:01:59.735" endtime="20191107 12:02:01.054"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='11']</arg>
+<arg>${JobPositionName}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:01.070" level="INFO">Typing text 'Programmer' into text field 'xpath=//*[@class='android.widget.EditText' and @index='11']'</msg>
+<status status="PASS" starttime="20191107 12:02:01.054" endtime="20191107 12:02:02.453"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>SUBMIT</arg>
+</arguments>
+<msg timestamp="20191107 12:02:03.148" level="INFO">Current page contains text 'SUBMIT'.</msg>
+<status status="PASS" starttime="20191107 12:02:02.453" endtime="20191107 12:02:03.148"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='SUBMIT']</arg>
+</arguments>
+<msg timestamp="20191107 12:02:03.148" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='SUBMIT']'.</msg>
+<status status="PASS" starttime="20191107 12:02:03.148" endtime="20191107 12:02:03.355"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>id=android:id/alertTitle</arg>
+</arguments>
+<status status="PASS" starttime="20191107 12:02:03.355" endtime="20191107 12:02:04.145"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Error</arg>
+</arguments>
+<msg timestamp="20191107 12:02:04.300" level="INFO">Current page contains text 'Error'.</msg>
+<status status="PASS" starttime="20191107 12:02:04.145" endtime="20191107 12:02:04.300"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>กรุณากรอกข้อมูลทั้งหมดให้ครบถ้วน</arg>
+</arguments>
+<msg timestamp="20191107 12:02:04.458" level="INFO">Current page contains text 'กรุณากรอกข้อมูลทั้งหมดให้ครบถ้วน'.</msg>
+<status status="PASS" starttime="20191107 12:02:04.300" endtime="20191107 12:02:04.458"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>OK</arg>
+</arguments>
+<msg timestamp="20191107 12:02:04.605" level="INFO">Current page contains text 'OK'.</msg>
+<status status="PASS" starttime="20191107 12:02:04.458" endtime="20191107 12:02:04.605"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@text='OK']</arg>
+</arguments>
+<msg timestamp="20191107 12:02:04.605" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='OK']'.</msg>
+<status status="PASS" starttime="20191107 12:02:04.605" endtime="20191107 12:02:04.871"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:01:57.087" endtime="20191107 12:02:04.871"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:01:57.087" endtime="20191107 12:02:04.871" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Not Specified Email Address">
+<kw name="Test EmailAddress Invalid" library="keyword">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='New Member Registration']</arg>
+</arguments>
+<status status="PASS" starttime="20191107 12:02:04.871" endtime="20191107 12:02:05.167"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='3']</arg>
+<arg>${FullName}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:05.167" level="INFO">Typing text 'Auttachai Kanthanras' into text field 'xpath=//*[@class='android.widget.EditText' and @index='3']'</msg>
+<status status="PASS" starttime="20191107 12:02:05.167" endtime="20191107 12:02:06.372"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='7']</arg>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:06.372" level="INFO">Typing text '0931369196' into text field 'xpath=//*[@class='android.widget.EditText' and @index='7']'</msg>
+<status status="PASS" starttime="20191107 12:02:06.372" endtime="20191107 12:02:07.980"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='9']</arg>
+<arg>${CompanyName}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:07.980" level="INFO">Typing text 'Hydro - Informatics Institute' into text field 'xpath=//*[@class='android.widget.EditText' and @index='9']'</msg>
+<status status="PASS" starttime="20191107 12:02:07.980" endtime="20191107 12:02:10.180"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='11']</arg>
+<arg>${JobPositionName}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:10.180" level="INFO">Typing text 'Programmer' into text field 'xpath=//*[@class='android.widget.EditText' and @index='11']'</msg>
+<status status="PASS" starttime="20191107 12:02:10.180" endtime="20191107 12:02:11.769"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>SUBMIT</arg>
+</arguments>
+<msg timestamp="20191107 12:02:12.590" level="INFO">Current page contains text 'SUBMIT'.</msg>
+<status status="PASS" starttime="20191107 12:02:11.769" endtime="20191107 12:02:12.590"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='SUBMIT']</arg>
+</arguments>
+<msg timestamp="20191107 12:02:12.590" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='SUBMIT']'.</msg>
+<status status="PASS" starttime="20191107 12:02:12.590" endtime="20191107 12:02:12.891"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>id=android:id/alertTitle</arg>
+</arguments>
+<status status="PASS" starttime="20191107 12:02:12.891" endtime="20191107 12:02:13.584"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Error</arg>
+</arguments>
+<msg timestamp="20191107 12:02:13.710" level="INFO">Current page contains text 'Error'.</msg>
+<status status="PASS" starttime="20191107 12:02:13.584" endtime="20191107 12:02:13.711"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>กรุณากรอกข้อมูลทั้งหมดให้ครบถ้วน</arg>
+</arguments>
+<msg timestamp="20191107 12:02:13.859" level="INFO">Current page contains text 'กรุณากรอกข้อมูลทั้งหมดให้ครบถ้วน'.</msg>
+<status status="PASS" starttime="20191107 12:02:13.711" endtime="20191107 12:02:13.859"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>OK</arg>
+</arguments>
+<msg timestamp="20191107 12:02:13.979" level="INFO">Current page contains text 'OK'.</msg>
+<status status="PASS" starttime="20191107 12:02:13.859" endtime="20191107 12:02:13.979"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@text='OK']</arg>
+</arguments>
+<msg timestamp="20191107 12:02:13.979" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='OK']'.</msg>
+<status status="PASS" starttime="20191107 12:02:13.979" endtime="20191107 12:02:14.215"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:02:04.871" endtime="20191107 12:02:14.215"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:02:04.871" endtime="20191107 12:02:14.215" critical="yes"></status>
+</test>
+<test id="s1-t6" name="Not Specified Phone Number">
+<kw name="Test PhoneNumber Invalid" library="keyword">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='New Member Registration']</arg>
+</arguments>
+<status status="PASS" starttime="20191107 12:02:14.215" endtime="20191107 12:02:14.438"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='3']</arg>
+<arg>${FullName}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:14.438" level="INFO">Typing text 'Auttachai Kanthanras' into text field 'xpath=//*[@class='android.widget.EditText' and @index='3']'</msg>
+<status status="PASS" starttime="20191107 12:02:14.438" endtime="20191107 12:02:15.612"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='5']</arg>
+<arg>${EmailAddress}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:15.612" level="INFO">Typing text 'auttachai@hii.or.th' into text field 'xpath=//*[@class='android.widget.EditText' and @index='5']'</msg>
+<status status="PASS" starttime="20191107 12:02:15.612" endtime="20191107 12:02:17.216"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='9']</arg>
+<arg>${CompanyName}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:17.216" level="INFO">Typing text 'Hydro - Informatics Institute' into text field 'xpath=//*[@class='android.widget.EditText' and @index='9']'</msg>
+<status status="PASS" starttime="20191107 12:02:17.216" endtime="20191107 12:02:18.812"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='11']</arg>
+<arg>${JobPositionName}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:18.812" level="INFO">Typing text 'Programmer' into text field 'xpath=//*[@class='android.widget.EditText' and @index='11']'</msg>
+<status status="PASS" starttime="20191107 12:02:18.812" endtime="20191107 12:02:20.343"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>SUBMIT</arg>
+</arguments>
+<msg timestamp="20191107 12:02:21.133" level="INFO">Current page contains text 'SUBMIT'.</msg>
+<status status="PASS" starttime="20191107 12:02:20.343" endtime="20191107 12:02:21.133"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='SUBMIT']</arg>
+</arguments>
+<msg timestamp="20191107 12:02:21.133" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='SUBMIT']'.</msg>
+<status status="PASS" starttime="20191107 12:02:21.133" endtime="20191107 12:02:21.419"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>id=android:id/alertTitle</arg>
+</arguments>
+<status status="PASS" starttime="20191107 12:02:21.419" endtime="20191107 12:02:22.094"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Error</arg>
+</arguments>
+<msg timestamp="20191107 12:02:22.216" level="INFO">Current page contains text 'Error'.</msg>
+<status status="PASS" starttime="20191107 12:02:22.094" endtime="20191107 12:02:22.216"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>กรุณากรอกข้อมูลทั้งหมดให้ครบถ้วน</arg>
+</arguments>
+<msg timestamp="20191107 12:02:22.338" level="INFO">Current page contains text 'กรุณากรอกข้อมูลทั้งหมดให้ครบถ้วน'.</msg>
+<status status="PASS" starttime="20191107 12:02:22.216" endtime="20191107 12:02:22.338"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>OK</arg>
+</arguments>
+<msg timestamp="20191107 12:02:22.478" level="INFO">Current page contains text 'OK'.</msg>
+<status status="PASS" starttime="20191107 12:02:22.338" endtime="20191107 12:02:22.478"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@text='OK']</arg>
+</arguments>
+<msg timestamp="20191107 12:02:22.478" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='OK']'.</msg>
+<status status="PASS" starttime="20191107 12:02:22.478" endtime="20191107 12:02:22.704"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:02:14.215" endtime="20191107 12:02:22.705"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:02:14.215" endtime="20191107 12:02:22.705" critical="yes"></status>
+</test>
+<test id="s1-t7" name="Not Specified Company Name">
+<kw name="Test CompanyName Invalid" library="keyword">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='New Member Registration']</arg>
+</arguments>
+<status status="PASS" starttime="20191107 12:02:22.707" endtime="20191107 12:02:22.988"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='3']</arg>
+<arg>${FullName}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:22.988" level="INFO">Typing text 'Auttachai Kanthanras' into text field 'xpath=//*[@class='android.widget.EditText' and @index='3']'</msg>
+<status status="PASS" starttime="20191107 12:02:22.988" endtime="20191107 12:02:24.075"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='5']</arg>
+<arg>${EmailAddress}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:24.075" level="INFO">Typing text 'auttachai@hii.or.th' into text field 'xpath=//*[@class='android.widget.EditText' and @index='5']'</msg>
+<status status="PASS" starttime="20191107 12:02:24.075" endtime="20191107 12:02:25.631"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='7']</arg>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:25.631" level="INFO">Typing text '0931369196' into text field 'xpath=//*[@class='android.widget.EditText' and @index='7']'</msg>
+<status status="PASS" starttime="20191107 12:02:25.631" endtime="20191107 12:02:27.194"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='11']</arg>
+<arg>${JobPositionName}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:27.194" level="INFO">Typing text 'Programmer' into text field 'xpath=//*[@class='android.widget.EditText' and @index='11']'</msg>
+<status status="PASS" starttime="20191107 12:02:27.194" endtime="20191107 12:02:28.750"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>SUBMIT</arg>
+</arguments>
+<msg timestamp="20191107 12:02:29.556" level="INFO">Current page contains text 'SUBMIT'.</msg>
+<status status="PASS" starttime="20191107 12:02:28.750" endtime="20191107 12:02:29.556"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='SUBMIT']</arg>
+</arguments>
+<msg timestamp="20191107 12:02:29.556" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='SUBMIT']'.</msg>
+<status status="PASS" starttime="20191107 12:02:29.556" endtime="20191107 12:02:29.819"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>id=android:id/alertTitle</arg>
+</arguments>
+<status status="PASS" starttime="20191107 12:02:29.819" endtime="20191107 12:02:30.488"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Error</arg>
+</arguments>
+<msg timestamp="20191107 12:02:30.589" level="INFO">Current page contains text 'Error'.</msg>
+<status status="PASS" starttime="20191107 12:02:30.488" endtime="20191107 12:02:30.589"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>กรุณากรอกข้อมูลทั้งหมดให้ครบถ้วน</arg>
+</arguments>
+<msg timestamp="20191107 12:02:30.705" level="INFO">Current page contains text 'กรุณากรอกข้อมูลทั้งหมดให้ครบถ้วน'.</msg>
+<status status="PASS" starttime="20191107 12:02:30.589" endtime="20191107 12:02:30.705"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>OK</arg>
+</arguments>
+<msg timestamp="20191107 12:02:30.808" level="INFO">Current page contains text 'OK'.</msg>
+<status status="PASS" starttime="20191107 12:02:30.705" endtime="20191107 12:02:30.808"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@text='OK']</arg>
+</arguments>
+<msg timestamp="20191107 12:02:30.808" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='OK']'.</msg>
+<status status="PASS" starttime="20191107 12:02:30.808" endtime="20191107 12:02:31.024"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:02:22.706" endtime="20191107 12:02:31.024"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:02:22.706" endtime="20191107 12:02:31.024" critical="yes"></status>
+</test>
+<test id="s1-t8" name="Not Specified Job Position Name">
+<kw name="Test JobPositionName Invalid" library="keyword">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='New Member Registration']</arg>
+</arguments>
+<status status="PASS" starttime="20191107 12:02:31.024" endtime="20191107 12:02:31.794"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='3']</arg>
+<arg>${FullName}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:31.794" level="INFO">Typing text 'Auttachai Kanthanras' into text field 'xpath=//*[@class='android.widget.EditText' and @index='3']'</msg>
+<status status="PASS" starttime="20191107 12:02:31.794" endtime="20191107 12:02:32.632"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='5']</arg>
+<arg>${EmailAddress}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:32.632" level="INFO">Typing text 'auttachai@hii.or.th' into text field 'xpath=//*[@class='android.widget.EditText' and @index='5']'</msg>
+<status status="PASS" starttime="20191107 12:02:32.632" endtime="20191107 12:02:34.181"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='7']</arg>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:34.181" level="INFO">Typing text '0931369196' into text field 'xpath=//*[@class='android.widget.EditText' and @index='7']'</msg>
+<status status="PASS" starttime="20191107 12:02:34.181" endtime="20191107 12:02:35.723"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='9']</arg>
+<arg>${CompanyName}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:35.723" level="INFO">Typing text 'Hydro - Informatics Institute' into text field 'xpath=//*[@class='android.widget.EditText' and @index='9']'</msg>
+<status status="PASS" starttime="20191107 12:02:35.723" endtime="20191107 12:02:37.297"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>SUBMIT</arg>
+</arguments>
+<msg timestamp="20191107 12:02:38.130" level="INFO">Current page contains text 'SUBMIT'.</msg>
+<status status="PASS" starttime="20191107 12:02:37.297" endtime="20191107 12:02:38.130"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='SUBMIT']</arg>
+</arguments>
+<msg timestamp="20191107 12:02:38.130" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='SUBMIT']'.</msg>
+<status status="PASS" starttime="20191107 12:02:38.130" endtime="20191107 12:02:38.391"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>id=android:id/alertTitle</arg>
+</arguments>
+<status status="PASS" starttime="20191107 12:02:38.391" endtime="20191107 12:02:39.075"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Error</arg>
+</arguments>
+<msg timestamp="20191107 12:02:39.179" level="INFO">Current page contains text 'Error'.</msg>
+<status status="PASS" starttime="20191107 12:02:39.075" endtime="20191107 12:02:39.179"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>กรุณากรอกข้อมูลทั้งหมดให้ครบถ้วน</arg>
+</arguments>
+<msg timestamp="20191107 12:02:39.763" level="INFO">Current page contains text 'กรุณากรอกข้อมูลทั้งหมดให้ครบถ้วน'.</msg>
+<status status="PASS" starttime="20191107 12:02:39.179" endtime="20191107 12:02:39.763"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>OK</arg>
+</arguments>
+<msg timestamp="20191107 12:02:39.878" level="INFO">Current page contains text 'OK'.</msg>
+<status status="PASS" starttime="20191107 12:02:39.763" endtime="20191107 12:02:39.878"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@text='OK']</arg>
+</arguments>
+<msg timestamp="20191107 12:02:39.878" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='OK']'.</msg>
+<status status="PASS" starttime="20191107 12:02:39.878" endtime="20191107 12:02:40.078"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:02:31.024" endtime="20191107 12:02:40.078"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:02:31.024" endtime="20191107 12:02:40.078" critical="yes"></status>
+</test>
+<test id="s1-t9" name="Specified All data should be success alert">
+<kw name="Test Specified All Data" library="keyword">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='New Member Registration']</arg>
+</arguments>
+<status status="PASS" starttime="20191107 12:02:40.078" endtime="20191107 12:02:41.122"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='3']</arg>
+<arg>${FullName}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:41.122" level="INFO">Typing text 'Auttachai Kanthanras' into text field 'xpath=//*[@class='android.widget.EditText' and @index='3']'</msg>
+<status status="PASS" starttime="20191107 12:02:41.122" endtime="20191107 12:02:41.910"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='5']</arg>
+<arg>${EmailAddress}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:41.910" level="INFO">Typing text 'auttachai@hii.or.th' into text field 'xpath=//*[@class='android.widget.EditText' and @index='5']'</msg>
+<status status="PASS" starttime="20191107 12:02:41.910" endtime="20191107 12:02:42.960"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='7']</arg>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:42.960" level="INFO">Typing text '0931369196' into text field 'xpath=//*[@class='android.widget.EditText' and @index='7']'</msg>
+<status status="PASS" starttime="20191107 12:02:42.960" endtime="20191107 12:02:44.719"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='9']</arg>
+<arg>${CompanyName}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:44.735" level="INFO">Typing text 'Hydro - Informatics Institute' into text field 'xpath=//*[@class='android.widget.EditText' and @index='9']'</msg>
+<status status="PASS" starttime="20191107 12:02:44.719" endtime="20191107 12:02:46.227"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@class='android.widget.EditText' and @index='11']</arg>
+<arg>${JobPositionName}</arg>
+</arguments>
+<msg timestamp="20191107 12:02:46.229" level="INFO">Typing text 'Programmer' into text field 'xpath=//*[@class='android.widget.EditText' and @index='11']'</msg>
+<status status="PASS" starttime="20191107 12:02:46.227" endtime="20191107 12:02:47.691"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>SUBMIT</arg>
+</arguments>
+<msg timestamp="20191107 12:02:48.302" level="INFO">Current page contains text 'SUBMIT'.</msg>
+<status status="PASS" starttime="20191107 12:02:47.691" endtime="20191107 12:02:48.302"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.TextView[@text='SUBMIT']</arg>
+</arguments>
+<msg timestamp="20191107 12:02:48.302" level="INFO">Clicking element 'xpath=//android.widget.TextView[@text='SUBMIT']'.</msg>
+<status status="PASS" starttime="20191107 12:02:48.302" endtime="20191107 12:02:48.555"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>id=android:id/alertTitle</arg>
+</arguments>
+<status status="PASS" starttime="20191107 12:02:48.555" endtime="20191107 12:02:49.215"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Successful</arg>
+</arguments>
+<msg timestamp="20191107 12:02:49.314" level="INFO">Current page contains text 'Successful'.</msg>
+<status status="PASS" starttime="20191107 12:02:49.215" endtime="20191107 12:02:49.314"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>บันทึกข้อมูลสำเร็จ</arg>
+</arguments>
+<msg timestamp="20191107 12:02:49.422" level="INFO">Current page contains text 'บันทึกข้อมูลสำเร็จ'.</msg>
+<status status="PASS" starttime="20191107 12:02:49.314" endtime="20191107 12:02:49.423"></status>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>OK</arg>
+</arguments>
+<msg timestamp="20191107 12:02:49.533" level="INFO">Current page contains text 'OK'.</msg>
+<status status="PASS" starttime="20191107 12:02:49.423" endtime="20191107 12:02:49.533"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.Button[@text='OK']</arg>
+</arguments>
+<msg timestamp="20191107 12:02:49.534" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='OK']'.</msg>
+<status status="PASS" starttime="20191107 12:02:49.534" endtime="20191107 12:02:49.703"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:02:40.078" endtime="20191107 12:02:49.703"></status>
+</kw>
+<status status="PASS" starttime="20191107 12:02:40.078" endtime="20191107 12:02:49.704" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20191107 12:01:41.995" endtime="20191107 12:02:49.705"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="9" fail="0">Critical Tests</stat>
+<stat pass="9" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="9" fail="0" id="s1" name="Test-Case">Test-Case</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
