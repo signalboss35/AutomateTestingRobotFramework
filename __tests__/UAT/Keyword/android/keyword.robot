@@ -4,7 +4,7 @@ Library           AppiumLibrary
 
 *** Variables ***
 ${REMOTE_URL}   		http://localhost:4723/wd/hub
-${deviceName}    		AHK7N17110007541
+${deviceName}    		emulator-5554
 ${platformName}    	android
 ${appPackage}    		com.automate_test
 ${appActivity}    	.MainActivity
